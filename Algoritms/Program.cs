@@ -34,6 +34,22 @@
             else return -1;
         }
 
+        public static int RecursiveLinearSearch(int[] array, int number, int i = 0)
+        {
+
+            if (i > array.Length - 1) return -1;
+            else if (array[i] == number) return i;
+            else return RecursiveLinearSearch(array, number, i + 1);
+        }
+
+        public static int Factorial(int n)
+        {
+            if (n == 0) return 1;
+            else return n * Factorial(n - 1);
+        }
+
+
+
         public static void Main()
         {
             Console.WriteLine("Yooo!");
@@ -41,6 +57,8 @@
             Console.WriteLine(LinearSearch(arr, 5));
             Console.WriteLine(BetterLinearSearch(arr, 7));
             Console.WriteLine(SentinelLinearSearch(arr, 3));
+            Console.WriteLine(Factorial(10));
+            Console.WriteLine(RecursiveLinearSearch(arr, 7));
         }
     }
 }
