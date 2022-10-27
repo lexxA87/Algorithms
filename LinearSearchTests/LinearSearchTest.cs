@@ -11,17 +11,17 @@ namespace LinearSearchTests
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void ExpectedTwo()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 5, 2);
         }
         [TestMethod]
-        public void TestMethod2()
+        public void ExpectedFive()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 9, 5);
         }
         [TestMethod]
-        public void TestMethod3()
+        public void ExpectedNotFound()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 7, -1);
         }
@@ -36,17 +36,17 @@ namespace LinearSearchTests
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void ExpectedTwo()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 5, 2);
         }
         [TestMethod]
-        public void TestMethod2()
+        public void ExpectedFive()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 9, 5);
         }
         [TestMethod]
-        public void TestMethod3()
+        public void ExpectedNotFound()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 7, -1);
         }
@@ -60,17 +60,17 @@ namespace LinearSearchTests
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void ExpectedTwo()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 5, 2);
         }
         [TestMethod]
-        public void TestMethod2()
+        public void ExpectedFive()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 9, 5);
         }
         [TestMethod]
-        public void TestMethod3()
+        public void ExpectedNotFound()
         {
             Test(new int[] { 1, 3, 5, 3, 0, 9 }, 7, -1);
         }
