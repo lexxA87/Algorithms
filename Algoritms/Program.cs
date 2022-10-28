@@ -13,6 +13,7 @@
             //Console.WriteLine(LinearSearch.Factorial(10));
             //Console.WriteLine(LinearSearch.RecursiveLinearSearch(arr, 7));
             Console.WriteLine(BinarySearchs.BinarySearch(arr2, 1));
+            Console.WriteLine(BinarySearchs.RecursiveBinarySearch(arr2, 42, 0, arr2.Length - 1));
         }
     }
 }
