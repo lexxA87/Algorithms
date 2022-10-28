@@ -7,7 +7,7 @@ namespace LinearSearchTests
     {
         static void Test(int[] array, int number, int result)
         {
-            Assert.AreEqual(Program.LinearSearch(array, number), result);
+            Assert.AreEqual(LinearSearch.SimpleLinearSearch(array, number), result);
         }
 
         [TestMethod]
@@ -32,7 +32,7 @@ namespace LinearSearchTests
     {
         static void Test(int[] array, int number, int result)
         {
-            Assert.AreEqual(Program.BetterLinearSearch(array, number), result);
+            Assert.AreEqual(LinearSearch.BetterLinearSearch(array, number), result);
         }
 
         [TestMethod]
@@ -56,7 +56,7 @@ namespace LinearSearchTests
     {
         static void Test(int[] array, int number, int result)
         {
-            Assert.AreEqual(Program.SentinelLinearSearch(array, number), result);
+            Assert.AreEqual(LinearSearch.SentinelLinearSearch(array, number), result);
         }
 
         [TestMethod]
@@ -80,7 +80,7 @@ namespace LinearSearchTests
     {
         static void Test(int[] array, int number, int result)
         {
-            Assert.AreEqual(Program.RecursiveLinearSearch(array, number), result);
+            Assert.AreEqual(LinearSearch.RecursiveLinearSearch(array, number), result);
         }
 
         [TestMethod]
@@ -105,7 +105,7 @@ namespace LinearSearchTests
     {
         static void Test(int n, int result)
         {
-            Assert.AreEqual(Program.Factorial(n), result);
+            Assert.AreEqual(LinearSearch.Factorial(n), result);
         }
         [TestMethod]
         public void ExpectedResult0()
