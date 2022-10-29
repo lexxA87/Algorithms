@@ -15,5 +15,10 @@
             }
             return array;
         }
+
+        public static int[] InsertionSort(int[] array)
+        {
+            return array;
+        }
     }
 }
