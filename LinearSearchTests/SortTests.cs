@@ -41,4 +41,22 @@ namespace SortTests
         }
     }
 
+    [TestClass]
+    public class MergeSortTest
+    {
+        static void Test(int result, int[] array, int index = 0)
+        {
+            Assert.AreEqual(result, array[index]);
+        }
+        [TestMethod]
+        public void ExpectedElementOfSortAray()
+        {
+            int[] array = new int[] { 56, 1, 3, 5, 3, 0, 9, 10, 2, 4, 42 };
+            Sort.MergeSort(array, 0, array.Length - 1);
+            Test(0, array);
+            Test(56, array, 10);
+            Test(1, array, 1);
+        }
+    }
+
 }
