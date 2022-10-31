@@ -19,7 +19,11 @@
             //var arr4 = Sort.SelectionSort(Array.Empty<int>());
             //foreach (int i in arr3) Console.Write(i + " ");
             //foreach (int i in arr4) Console.Write(i + " ");
-            Sort.MergeSort(arr2, 0, arr2.Length - 1);
+            //Sort.MergeSort(arr2, 0, arr2.Length - 1);
+            Sort.QuickSort(arr, 0, arr.Length - 1);
+            Sort.QuickSort(arr2, 0, arr2.Length - 1);
+            foreach (int i in arr) Console.Write(i + " ");
+            Console.WriteLine();
             foreach (int i in arr2) Console.Write(i + " ");
 
         }

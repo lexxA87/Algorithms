@@ -83,5 +83,28 @@
                 }
             }
         }
+
+        public static void QuickSort(int[] array, int start, int end)
+        {
+            if (start >= end) return;
+            int sup = Partition(array, start, end);
+            QuickSort(array, start, sup - 1);
+            QuickSort(array, sup + 1, end);
+        }
+
+        private static int Partition(int[] array, int start, int end)
+        {
+            int sup = start;
+            for (int i = start; i <= end - 1; i++)
+            {
+                if (array[i] <= array[end])
+                {
+                    (array[sup], array[i]) = (array[i], array[sup]);
+                    sup++;
+                }
+            }
+            (array[sup], array[end]) = (array[end], array[sup]);
+            return sup;
+        }
     }
 }
