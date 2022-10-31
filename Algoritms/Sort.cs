@@ -106,5 +106,16 @@
             (array[sup], array[end]) = (array[end], array[sup]);
             return sup;
         }
+
+        public static void ReallySimpleSort(int[] array, int length)
+        {
+            int k = 0;
+            for (int i = 0; i < length; i++)
+            {
+                if (array[i] == 0) k++;
+            }
+            for (int i = 0; i < k; i++) array[i] = 0;
+            for (int i = k + 1; i < length; i++) array[i] = 1;
+        }
     }
 }

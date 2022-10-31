@@ -7,6 +7,7 @@
             Console.WriteLine("Yooo!");
             var arr = new int[] { 56, 1, 3, 5, 3, 0, 9, 10, 2, 4, 42 };
             var arr2 = new int[] { 23, 7, 1, 3, 5, 6, 10, 15 };
+            var arr3 = new int[] { 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1 };
             //Console.WriteLine(LinearSearch.SimpleLinearSearch(arr, 5));
             //Console.WriteLine(LinearSearch.BetterLinearSearch(arr, 7));
             //Console.WriteLine(LinearSearch.SentinelLinearSearch(arr, 3));
@@ -20,12 +21,13 @@
             //foreach (int i in arr3) Console.Write(i + " ");
             //foreach (int i in arr4) Console.Write(i + " ");
             //Sort.MergeSort(arr2, 0, arr2.Length - 1);
-            Sort.QuickSort(arr, 0, arr.Length - 1);
-            Sort.QuickSort(arr2, 0, arr2.Length - 1);
-            foreach (int i in arr) Console.Write(i + " ");
-            Console.WriteLine();
-            foreach (int i in arr2) Console.Write(i + " ");
-
+            //Sort.QuickSort(arr, 0, arr.Length - 1);
+            //Sort.QuickSort(arr2, 0, arr2.Length - 1);
+            //foreach (int i in arr) Console.Write(i + " ");
+            //Console.WriteLine();
+            //foreach (int i in arr2) Console.Write(i + " ");
+            Sort.ReallySimpleSort(arr3, arr3.Length - 1);
+            foreach (int i in arr3) Console.Write(i + " ");
         }
     }
 }
