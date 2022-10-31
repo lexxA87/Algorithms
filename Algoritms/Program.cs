@@ -26,8 +26,12 @@
             //foreach (int i in arr) Console.Write(i + " ");
             //Console.WriteLine();
             //foreach (int i in arr2) Console.Write(i + " ");
-            Sort.ReallySimpleSort(arr3, arr3.Length - 1);
-            foreach (int i in arr3) Console.Write(i + " ");
+            //Sort.ReallySimpleSort(arr3, arr3.Length - 1);
+            //foreach (int i in arr3) Console.Write(i + " ");
+            var arrRes = CountingSort.Sort(arr, arr.Length, 56);
+            foreach (int i in arrRes) Console.Write(i + " ");
+            Console.WriteLine();
+
         }
     }
 }
