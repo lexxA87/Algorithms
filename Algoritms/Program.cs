@@ -52,9 +52,14 @@
             //foreach (int i in arrRes) Console.Write(i + " ");
             //Console.WriteLine();
 
-            var arrLCS = LongestCommonSubsequence.ComputeLCSTable("ABCDEFG", "ABCDEFG");
-            string str = LongestCommonSubsequence.AssembleLCS("ABCDEFG", "ABCDEFG", arrLCS, 6, 6);
+            var arrLCS = LongestCommonSubsequence.ComputeLCSTable("ABCDEFG", "EFG");
+            string str = LongestCommonSubsequence.AssembleLCS("ABCDEFG", "EFG", arrLCS, 7, 3);
             Console.WriteLine(str);
+
+            var arrCostTransform = AssembleTransformation.ComputeTransformTableCost("ACAAGC", "CCGT", -1, 1, 2, 2);
+            var arrOperTransform = AssembleTransformation.ComputeTransformTableOperation("ACAAGC", "CCGT", -1, 1, 2, 2);
+            var operations = AssembleTransformation.Transform(arrOperTransform, 6, 4);
+            Console.WriteLine(operations);
         }
     }
 }
